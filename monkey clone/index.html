@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monkeytype Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h1>Typing Test</h1>
+
+  <div id="test-area"></div>
+
+  <div class="stats">
+    <span>Correct: <b id="correct">0</b></span>
+    <span>Total: <b id="total">0</b></span>
+  </div>
+
+  <div id="result" class="hidden">
+    <h2>Results</h2>
+    <p>WPM: <span id="wpm"></span></p>
+    <p>Raw WPM: <span id="rawWpm"></span></p>
+    <p>Accuracy: <span id="accuracy"></span>%</p>
+    <button onclick="restart()">Restart</button>
+  </div>
+
+  <h2>Leaderboard (Accuracy ≥ 90%)</h2>
+  <ul id="leaderboard"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
